@@ -138,6 +138,12 @@ ab14febaa837b6c1484c35e6
 
 **Note:** Neural hash generated here might be a few bits off from one generated on an iOS device. This is expected since different iOS devices generate slightly different hashes anyway.
 
+|Device|Hash|
+|---|---|
+|iPad Pro 10.5-inch|`2b186faa6b36ffcc4c4635e1`|
+|M1 Mac|`2b5c6faa6bb7bdcc4c4731a1`|
+|iOS Simulator|`2b5c6faa6bb6bdcc4c4731a1`|
+|ONNX Runtime|`2b5c6faa6bb6bdcc4c4735a1`|
 ## Credits
 
 - [nhcalc](https://github.com/KhaosT/nhcalc) for uncovering NeuralHash private API.
