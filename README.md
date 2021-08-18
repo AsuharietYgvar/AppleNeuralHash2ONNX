@@ -9,7 +9,7 @@ Apple NeuralHash is a [perceptual hashing](https://en.wikipedia.org/wiki/Percept
 2. Resize image to `360x360`.
 3. Normalize RGB values to `[-1, 1]` range.
 4. Perform inference on the NeuralHash model.
-5. Calculate dot product of a `128x96` matrix with the resulting vector of 128 floats.
+5. Calculate dot product of a `96x128` matrix with the resulting vector of 128 floats.
 6. Apply [binary step](https://en.wikipedia.org/wiki/Heaviside_step_function) to the resulting 96 float vector.
 7. Convert the vector of 1.0 and 0.0 to bits, resulting in 96-bit binary data.
 
@@ -55,6 +55,7 @@ If you have a recent version of macOS (11.4+) or jailbroken iOS (14.7+) installe
 ```bash
 cd /path/to/ipsw/file
 mkdir unpacked_ipsw
+cd unpacked_ipsw
 unzip ../*.ipsw
 ```
 3. Locate system image:
@@ -144,6 +145,7 @@ ab14febaa837b6c1484c35e6
 |M1 Mac|`2b5c6faa6bb7bdcc4c4731a1`|
 |iOS Simulator|`2b5c6faa6bb6bdcc4c4731a1`|
 |ONNX Runtime|`2b5c6faa6bb6bdcc4c4735a1`|
+
 ## Credits
 
 - [nhcalc](https://github.com/KhaosT/nhcalc) for uncovering NeuralHash private API.
