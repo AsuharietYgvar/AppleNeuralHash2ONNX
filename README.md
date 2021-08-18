@@ -137,7 +137,7 @@ Example output:
 ab14febaa837b6c1484c35e6
 ```
 
-**Note:** Neural hash generated here might be a few bits off from one generated on an iOS device. This is expected since different iOS devices generate slightly different hashes anyway.
+**Note:** Neural hash generated here might be a few bits off from one generated on an iOS device. This is expected since different iOS devices generate slightly different hashes anyway. The reason is that neural networks are based on floating-point calculations. The accuracy is highly dependent on the hardware. For smaller networks it won't make any difference. But NeuralHash has 200+ layers, resulting in significant cumulative errors.
 
 |Device|Hash|
 |---|---|
