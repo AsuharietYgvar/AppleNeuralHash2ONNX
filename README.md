@@ -170,7 +170,7 @@ This generates the ONNX model file. Once the file has been generate, you can cop
 
 Once the file is in the container, run this command on the container:
 
-`python3 nnhash.py ./neural_hash/model.onnx ./neural_hash/neuralhash_128x96_seed1.dat dog.png`
+`python3 nnhash.py ./neural_hash/model.onnx ./neural_hash/neuralhash_128x96_seed1.dat <image_file>`
 
 ## Credits
 
